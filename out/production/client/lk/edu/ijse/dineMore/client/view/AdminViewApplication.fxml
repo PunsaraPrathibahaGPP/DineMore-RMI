@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" prefHeight="750.0" prefWidth="1371.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.edu.ijse.dineMore.client.controller.AdminViewApplicationController">
+   <children>
+      <VBox opacity="0.73" prefHeight="750.0" prefWidth="245.0" style="-fx-background-color: #000000;">
+         <children>
+            <HBox prefHeight="55.0" prefWidth="242.0" style="-fx-background-color: #eceff1;">
+               <children>
+                  <ImageView fitHeight="55.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/male-circle-512.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="79.0" prefWidth="258.0" text="  Admin Panel">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox onMouseEntered="#timeMouseEntered" onMouseExited="#timeMouseExited" prefHeight="64.0" prefWidth="217.0" style="-fx-background-radius: 100px; -fx-background-color: white;">
+               <VBox.margin>
+                  <Insets bottom="3.0" top="14.0" />
+               </VBox.margin>
+               <children>
+                  <Label fx:id="lbldate" prefHeight="80.0" prefWidth="278.0" text="     01:39 PM">
+                     <font>
+                        <Font name="DS-Digital Bold" size="44.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="hBoxManageEmployee" onMouseClicked="#hBoxManageEmployeeClicked" onMouseEntered="#hBoxMouseEntered" onMouseExited="#hBoxMouseExited" prefHeight="54.0" prefWidth="276.0">
+               <children>
+                  <ImageView fitHeight="51.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/male-circle-512.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="70.0" prefWidth="279.0" text="  Manage Employee" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Italic" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="2.0" top="12.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="lblViewReports" onMouseClicked="#lblViewReportsClicked" onMouseEntered="#hBoxMouseEntered" onMouseExited="#hBoxMouseExited" prefHeight="46.0" prefWidth="276.0">
+               <children>
+                  <ImageView fitHeight="49.0" fitWidth="46.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../assests/Accounting_48px.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="94.0" prefWidth="276.0" text="   View Reports" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Italic" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="3.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="lblLogOut" onMouseClicked="#lblLogOutClicked" onMouseEntered="#hBoxMouseEntered" onMouseExited="#hBoxMouseExited" prefHeight="52.0" prefWidth="276.0">
+               <children>
+                  <ImageView fitHeight="47.0" fitWidth="43.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../assests/Logout Rounded Left_48px.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="94.0" prefWidth="276.0" text="    Log Out" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Italic" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="3.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <Separator layoutX="244.0" orientation="VERTICAL" prefHeight="750.0" prefWidth="7.0" />
+      <AnchorPane fx:id="homePane" layoutX="247.0" prefHeight="750.0" prefWidth="1124.0">
+         <children>
+            <Pane prefHeight="55.0" prefWidth="1124.0" style="-fx-background-color: #eceff1;">
+               <children>
+                  <ImageView fx:id="imgClose" fitHeight="28.0" fitWidth="28.0" layoutX="1082.0" layoutY="13.0" onMouseClicked="#imgCloseOnClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/Cancel_48px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import java.net.URL?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="402.0" prefWidth="542.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.edu.ijse.dineMore.client.controller.DashBoardController">
+    <stylesheets>
+        <URL value="@/lk/edu/ijse/dineMore/client/style/dashboard.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="402.0" fitWidth="551.0" layoutX="-5.0" opacity="0.8" pickOnBounds="true">
+         <image>
+            <Image url="@../assests/giphy.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="56.0" fitWidth="228.0" layoutX="9.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/images.png" />
+         </image>
+      </ImageView>
+      <JFXProgressBar fx:id="progressBar" layoutX="52.0" layoutY="383.0" prefHeight="5.0" prefWidth="424.0" />
+      <ProgressIndicator fx:id="progressIndicator" layoutX="258.0" layoutY="341.0" progress="0.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="723.0" prefWidth="1116.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.edu.ijse.dineMore.client.controller.ViewReportsController">
+   <children>
+      <Label layoutX="494.0" layoutY="4.0" prefHeight="46.0" prefWidth="199.0" text="View Reports">
+         <font>
+            <Font name="Cambria Italic" size="24.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="46.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/Accounting_48px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Pane fx:id="customerDetailPane" layoutX="37.0" layoutY="145.0" onMouseClicked="#customerDetailPaneClicked" onMouseEntered="#paneOnMouseEntered" onMouseExited="#paneOnMouseExited" prefHeight="82.0" prefWidth="385.0" style="-fx-background-color: #d7ccc8;">
+         <children>
+            <Label layoutY="-1.0" prefHeight="90.0" prefWidth="385.0" text="Customer Details">
+               <font>
+                  <Font name="Cambria Italic" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="54.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/User_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="orderDetailPane" layoutX="685.0" layoutY="143.0" onMouseClicked="#orderDetailPaneClicked" onMouseEntered="#paneOnMouseEntered" onMouseExited="#paneOnMouseExited" prefHeight="82.0" prefWidth="397.0" style="-fx-background-color: #d7ccc8;">
+         <children>
+            <Label layoutY="-4.0" prefHeight="90.0" prefWidth="397.0" text="Order Details">
+               <font>
+                  <Font name="Cambria Italic" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="46.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/News_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="foodDetailPane" layoutX="36.0" layoutY="284.0" onMouseClicked="#foodDetailPaneClicked" onMouseEntered="#paneOnMouseEntered" onMouseExited="#paneOnMouseExited" prefHeight="82.0" prefWidth="385.0" style="-fx-background-color: #d7ccc8;">
+         <children>
+            <Label layoutY="-1.0" prefHeight="82.0" prefWidth="385.0" text="Food Details">
+               <font>
+                  <Font name="Cambria Italic" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="62.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/Food And Wine_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="cherfDetailPane" layoutX="685.0" layoutY="284.0" onMouseClicked="#cherfDetailPaneClicked" onMouseEntered="#paneOnMouseEntered" onMouseExited="#paneOnMouseExited" prefHeight="82.0" prefWidth="397.0" style="-fx-background-color: #d7ccc8;">
+         <children>
+            <Label layoutY="-4.0" prefHeight="90.0" prefWidth="397.0" text="Chef Details">
+               <font>
+                  <Font name="Cambria Italic" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="52.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/chef-flat.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="receptionistDetailPane" layoutX="36.0" layoutY="421.0" onMouseClicked="#receptionistDetailPaneClicked" onMouseEntered="#paneOnMouseEntered" onMouseExited="#paneOnMouseExited" prefHeight="82.0" prefWidth="385.0" style="-fx-background-color: #d7ccc8;">
+         <children>
+            <Label layoutY="-1.0" prefHeight="82.0" prefWidth="385.0" text="Receptionist Details">
+               <font>
+                  <Font name="Cambria Italic" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="66.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/59802_support_256x256.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="bikeRiderDetailPane" layoutX="685.0" layoutY="421.0" onMouseClicked="#bikeRiderDetailPaneClicked" onMouseEntered="#paneOnMouseEntered" onMouseExited="#paneOnMouseExited" prefHeight="82.0" prefWidth="397.0" style="-fx-background-color: #d7ccc8;">
+         <children>
+            <Label layoutY="-4.0" prefHeight="90.0" prefWidth="397.0" text="Bike Rider Details">
+               <font>
+                  <Font name="Cambria Italic" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="74.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/8f6b4e3941b468ff8a834142eeec1389-homem-de-entrega-na-moto-by-vexels.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="orderprogressPane" layoutX="37.0" layoutY="560.0" onMouseClicked="#orderprogressPaneClicked" onMouseEntered="#paneOnMouseEntered" onMouseExited="#paneOnMouseExited" prefHeight="82.0" prefWidth="385.0" style="-fx-background-color: #d7ccc8;">
+         <children>
+            <Label layoutY="-1.0" prefHeight="82.0" prefWidth="385.0" text="Order Progress">
+               <font>
+                  <Font name="Cambria Italic" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="57.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/Bullish_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="685.0" layoutY="560.0" onMouseEntered="#paneOnMouseEntered" onMouseExited="#paneOnMouseExited" prefHeight="82.0" prefWidth="397.0" style="-fx-background-color: #d7ccc8;">
+         <children>
+            <Label layoutY="-4.0" prefHeight="90.0" prefWidth="397.0">
+               <font>
+                  <Font name="Cambria Italic" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

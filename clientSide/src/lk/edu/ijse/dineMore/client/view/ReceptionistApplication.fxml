@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="751.0" prefWidth="1370.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.edu.ijse.dineMore.client.controller.ReceptionistApplicationController">
+    <stylesheets>
+        <URL value="@/lk/edu/ijse/dineMore/client/style/receptionistapplication.css" />
+    </stylesheets>
+   <children>
+      <Pane opacity="0.34" prefHeight="43.0" prefWidth="1371.0" style="-fx-background-color: #000000;">
+         <children>
+            <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="1312.0" layoutY="4.0" onMouseClicked="#imgMiniMizeClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/Do Not Disturb_48px.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <ImageView fitHeight="748.0" fitWidth="1089.0" layoutX="3.0" layoutY="1.0" opacity="0.3" pickOnBounds="true">
+         <image>
+            <Image url="@../assests/Receptionist-or-Personal-Assistant.jpg" />
+         </image>
+      </ImageView>
+      <HBox layoutX="66.0" prefHeight="38.0" prefWidth="277.0">
+         <children>
+            <ImageView fitHeight="42.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/59802_support_256x256.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="50.0" prefWidth="233.0" text="  Receptionist">
+               <font>
+                  <Font name="Cambria Italic" size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblReceptionistID" opacity="0.0" prefHeight="42.0" prefWidth="93.0" style="-fx-background-radius: 100px; -fx-background-color: white;" text="   " textFill="WHITE">
+               <font>
+                  <Font name="Cambria Italic" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <JFXButton fx:id="btnPlaceOrder" buttonType="RAISED" layoutX="25.0" layoutY="471.0" onAction="#btnPlaceOrderOnAction" prefHeight="43.0" prefWidth="133.0" style="-fx-background-color: #90caf9; -fx-background-radius: 100px;" text="Place Order">
+         <font>
+            <Font name="Cambria Bold Italic" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" buttonType="RAISED" layoutX="629.0" layoutY="471.0" onAction="#btnDeleteOnAction" prefHeight="43.0" prefWidth="140.0" style="-fx-background-color: #ef9a9a; -fx-background-radius: 100px;" text="Delete">
+         <font>
+            <Font name="Cambria Bold Italic" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnClear" buttonType="RAISED" layoutX="480.0" layoutY="471.0" onAction="#btnClearOnAction" prefHeight="43.0" prefWidth="133.0" style="-fx-background-color: #fff59d; -fx-background-radius: 100px;" text="Clear Fields">
+         <font>
+            <Font name="Cambria Bold Italic" size="18.0" />
+         </font>
+      </JFXButton>
+      <ImageView fx:id="imgGoBack" fitHeight="43.0" fitWidth="38.0" layoutX="3.0" layoutY="1.0" onMouseClicked="#imgGoBackClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/Circled Left_48px.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnSearch" buttonType="RAISED" layoutX="175.0" layoutY="471.0" onAction="#btnSearchOnAction" prefHeight="43.0" prefWidth="140.0" style="-fx-background-color: #03a9f4; -fx-background-radius: 100px;" text="Search">
+         <font>
+            <Font name="Cambria Bold Italic" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="327.0" layoutY="471.0" onAction="#btnUpdateOnAction" prefHeight="43.0" prefWidth="140.0" style="-fx-background-color: #ccff90; -fx-background-radius: 100px;" text="Update">
+         <font>
+            <Font name="Cambria Bold Italic" size="18.0" />
+         </font>
+      </JFXButton>
+      <Pane fx:id="customerPanel" layoutX="23.0" layoutY="74.0" opacity="0.59" prefHeight="378.0" prefWidth="328.0" style="-fx-background-color: #eceff1; -fx-border-color: #000000;">
+         <children>
+            <JFXTextField fx:id="txtCustomerFirstName" labelFloat="true" layoutX="16.0" layoutY="155.0" onAction="#txtCustomerFirstNameOnAction" prefHeight="32.0" prefWidth="259.0" promptText="Customer First Name">
+               <font>
+                  <Font name="Cambria Italic" size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtCustomerLastName" labelFloat="true" layoutX="16.0" layoutY="218.0" onAction="#txtCustomerLastNameOnAction" prefHeight="32.0" prefWidth="259.0" promptText="Customer Last Name">
+               <font>
+                  <Font name="Cambria Italic" size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtCustomerNicNO" labelFloat="true" layoutX="16.0" layoutY="99.0" onAction="#txtCustomerNicNOOnAction" prefHeight="32.0" prefWidth="259.0" promptText="Customer NIC NO">
+               <font>
+                  <Font name="Cambria Italic" size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtCustomerAddress" labelFloat="true" layoutX="16.0" layoutY="277.0" onAction="#txtCustomerAddressOnAction" prefHeight="32.0" prefWidth="259.0" promptText="Customer Address">
+               <font>
+                  <Font name="Cambria Italic" size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtCustomerID" labelFloat="true" layoutX="16.0" layoutY="41.0" prefHeight="32.0" prefWidth="259.0" promptText="Customer ID">
+               <font>
+                  <Font name="Cambria Italic" size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtCustomerMobileNO" labelFloat="true" layoutX="16.0" layoutY="332.0" onAction="#txtCustomerMobileNOOnAction" prefHeight="32.0" prefWidth="259.0" promptText="Customer Mobile No">
+               <font>
+                  <Font name="Cambria Italic" size="17.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </Pane>
+      <Pane fx:id="orderPanel" layoutX="748.0" layoutY="75.0" opacity="0.59" prefHeight="378.0" prefWidth="328.0" style="-fx-background-color: #eceff1; -fx-border-color: #000000;">
+         <children>
+            <JFXTextField fx:id="txtOrderID" labelFloat="true" layoutX="16.0" layoutY="41.0" onAction="#txtOrderIDOnAction" prefHeight="32.0" prefWidth="277.0" promptText="Order ID">
+               <font>
+                  <Font name="Cambria Italic" size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtOrderDate" labelFloat="true" layoutX="14.0" layoutY="98.0" onAction="#txtOrderDateOnAction" prefHeight="32.0" prefWidth="277.0" promptText="Order Date">
+               <font>
+                  <Font name="Cambria Italic" size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtOrderTime" labelFloat="true" layoutX="14.0" layoutY="154.0" onAction="#txtOrderTimeOnAction" prefHeight="32.0" prefWidth="277.0" promptText="Order Time">
+               <font>
+                  <Font name="Cambria Italic" size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtAppointedTime" labelFloat="true" layoutX="14.0" layoutY="211.0" onAction="#txtAppointedTimeOnAction" prefHeight="32.0" prefWidth="277.0" promptText="Appointed Time">
+               <font>
+                  <Font name="Cambria Italic" size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtFoodType" labelFloat="true" layoutX="14.0" layoutY="272.0" onAction="#txtFoodTypeOnAction" prefHeight="32.0" prefWidth="277.0" promptText="Food Types">
+               <font>
+                  <Font name="Cambria Italic" size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtTotalPrice" labelFloat="true" layoutX="14.0" layoutY="332.0" onAction="#txtTotalPriceOnAction" prefHeight="32.0" prefWidth="277.0" promptText="Net Price">
+               <font>
+                  <Font name="Cambria Italic" size="17.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </Pane>
+      <TableView fx:id="tblOrderStatus" layoutX="1091.0" layoutY="46.0" prefHeight="704.0" prefWidth="277.0">
+        <columns>
+          <TableColumn minWidth="3.0" prefWidth="104.0" text="Customer Name" />
+            <TableColumn prefWidth="86.0" text="Due Time" />
+            <TableColumn prefWidth="86.0" text="Order Status" />
+            <TableColumn prefWidth="469.0" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="imgClose" fitHeight="26.0" fitWidth="28.0" layoutX="1341.0" layoutY="4.0" onMouseClicked="#imgCloseClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/Cancel_48px.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblViewCustomerDetails" layoutX="22.0" layoutY="525.0" prefHeight="218.0" prefWidth="1061.0">
+        <columns>
+          <TableColumn prefWidth="89.0" text="Customer ID" />
+          <TableColumn prefWidth="173.0" text="Customer First Name" />
+            <TableColumn prefWidth="175.0" text="Customer Last Name" />
+            <TableColumn prefWidth="293.0" text="Customer Address" />
+            <TableColumn minWidth="0.0" prefWidth="176.0" text="Customer NIC No" />
+            <TableColumn minWidth="0.0" prefWidth="154.0" text="Customer Mobile No" />
+        </columns>
+      </TableView>
+      <Pane fx:id="orderPanel1" layoutX="385.0" layoutY="74.0" opacity="0.59" prefHeight="378.0" prefWidth="328.0" style="-fx-background-color: #eceff1; -fx-border-color: #000000;">
+         <children>
+            <JFXTextField fx:id="txtNoOfFoodOrders" labelFloat="true" layoutX="14.0" layoutY="41.0" onAction="#txtNoOfFoodOrdersOnAction" prefHeight="32.0" prefWidth="298.0" promptText="No Of Food Items Customer Wish to Order">
+               <font>
+                  <Font name="Cambria Italic" size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtFirstFoodTypeAmmount" labelFloat="true" layoutX="220.0" layoutY="103.0" onAction="#txtFirstFoodTypeAmmountOnAction" prefHeight="32.0" prefWidth="92.0" promptText="Ammount">
+               <font>
+                  <Font name="Cambria Italic" size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtSecondFoodTypeAmmount" labelFloat="true" layoutX="220.0" layoutY="173.0" onAction="#txtSecondFoodTypeAmmountOnAction" prefHeight="32.0" prefWidth="92.0" promptText="Ammount">
+               <font>
+                  <Font name="Cambria Italic" size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtThirdFoodTypeAmmount" labelFloat="true" layoutX="219.0" layoutY="250.0" onAction="#txtThirdFoodTypeAmmountOnAction" prefHeight="32.0" prefWidth="92.0" promptText="Ammount">
+               <font>
+                  <Font name="Cambria Italic" size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXComboBox fx:id="cmbFirstFoodType" layoutX="15.0" layoutY="102.0" onAction="#cmbFirstFoodTypeOnAction" prefHeight="32.0" prefWidth="175.0" />
+            <JFXComboBox fx:id="cmbSecondFoodType" layoutX="14.0" layoutY="173.0" onAction="#cmbSecondFoodTypeOnAction" prefHeight="32.0" prefWidth="175.0" />
+            <JFXComboBox fx:id="cmbThirdFoodType" layoutX="15.0" layoutY="249.0" onAction="#cmbThirdFoodTypeOnAction" prefHeight="32.0" prefWidth="175.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
